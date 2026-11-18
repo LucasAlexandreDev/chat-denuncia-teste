@@ -1,0 +1,16 @@
+{
+  "name": "chat-denuncia",
+  "version": "1.0.0",
+  "description": "Chat em tempo real para denúncias entre estudante e instituição (Express + Socket.io)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Lucas Alexandre da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}

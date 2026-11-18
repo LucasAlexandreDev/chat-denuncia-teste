@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia - Estudante</title>
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Chat da denúncia (Estudante)</h1>
+
+        <!-- Área do chat (aparece assim que o usuário entra na sala) -->
+        <section id="areaChat" hidden>
+            <ul id="listaMensagens"></ul>
+            <form id="formMensagem">
+                <input id="inputMensagem" placeholder="Digite sua mensagem" maxlength="500" autocomplete="off" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <p id="avisoErro" class="erro"></p>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js" data-papel="ESTUDANTE"></script>
+</body>
+</html>
